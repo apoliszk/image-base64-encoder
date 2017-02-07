@@ -1,1 +1,1 @@
-# [Encode an image to Base64](http://www.apoliszk.pub/pages/ImageBase64Encorder/index.html)
+# [Encode an image to Base64](http://www.apolis.pub/pages/ImageBase64Encorder/index.html)
