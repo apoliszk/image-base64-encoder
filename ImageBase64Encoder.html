@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Image Base64 Encorder</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1>Image Base64 Encorder</h1>
+    <div>
+        <textarea id="base64ResultTextArea" rows="15" style="width:100%;"></textarea>
+        <div style="display: flex; align-items: flex-start; flex-wrap: wrap;">
+            <input id="fileUpload" type="file" style="margin: 1em 0;" accept="image/gif,image/jpg,image/jpeg,image/png,image/bmp" onchange="readFile()">
+            <img id="imgDisplay" style="box-shadow: 1px 1px 4px; margin: 1em 0;">
+        </div>
+    </div>
+
+    <script>
+        function readFile() {
+            var fileUpload = document.getElementById('fileUpload');
+            var base64ResultTextArea = document.getElementById('base64ResultTextArea');
+            var imgDisplay = document.getElementById('imgDisplay');
+            var file = fileUpload.files[0];
+            var reader = new FileReader();
+            reader.onload = function () {
+                base64ResultTextArea.value = this.result;
+                imgDisplay.src = this.result;
+            };
+            reader.readAsDataURL(file)
+        }
+    </script>
+</body>
+
+</html>
