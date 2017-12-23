@@ -1,2 +1,2 @@
 # Encode an image to Base64
-[Take a look](http://www.apolis.pub/pages/ImageBase64Encoder/)
+[Take a look](http://apoliszk.github.io/pages/image-base64-encoder/)
